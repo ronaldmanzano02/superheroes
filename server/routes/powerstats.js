@@ -1,8 +1,6 @@
 require('dotenv').config()
 const db = require('../database/models');
 const rp = require("request-promise-native");
-const Sequelize = require('sequelize');
-const Op = Sequelize.Op;
 const models = db.sequelize.models;
 const fs = require('fs');
 const fetch = require('node-fetch');
@@ -48,7 +46,7 @@ async function getById(req, res) {
     }
 };
 
-// Handles single entry point to search heroes by name for future changes. For example, client can handle
+// Handles single entry point for future changes. For example, client can handle
 // styles if the search heroes has been modified or not.
 async function searchByName(req, res) {
     const name = req.params.name;
