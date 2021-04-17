@@ -1,0 +1,1 @@
+Storage folder for the saved images. Client can access all files in this folder.
